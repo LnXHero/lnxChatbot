@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chatbot Escudo</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Escudo" class="logo">
+        <div class="header-buttons">
+            <button id="newChatBtn">Novo Chat</button>
+            <button id="clearHistoryBtn">Limpar Histórico</button>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="chat-list">
+            <div class="chat-list-header">
+                <h2>Histórico</h2>
+            </div>
+            <ul id="conversationList">
+                <!-- Conversas anteriores serão listadas aqui -->
+            </ul>
+        </aside>
+        <main class="chat-window">
+            <div id="chatOutput" class="chat-messages">
+                <!-- Mensagens do chat aparecerão aqui -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+                <button id="sendButton">
+                    <span class="send-icon">➤</span>
+                </button>
+            </div>
+            <div id="statusIndicator" class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Online</span>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
