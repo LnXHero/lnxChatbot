@@ -85,7 +85,7 @@ class ChatBot {
     }
 
     async getBotResponse(message) {
-        const API_KEY = 'AIzaSyDUwzHXwR3k_guPc_Htc7RImAm6y-e_wFk';
+        const API_KEY = 'API';
         const API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent';
 
         console.log('Sending request to API:', API_URL);
